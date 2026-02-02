@@ -1,20 +1,20 @@
-## МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ
-## КИЇВСЬКИЙ ФАХОВИЙ КОЛЕДЖ ЗВ'ЯЗКУ
+# МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ
+# КИЇВСЬКИЙ ФАХОВИЙ КОЛЕДЖ ЗВ'ЯЗКУ
 
 
-## ЗВІТ
+# ЗВІТ
 
-## Про виконання лабораторної роботи №2  
-## З дисципліни «Операційні системи»  
-## На тему: «Знайомство з інтерфейсом та можливостями ОС Linux»
+## Про виконання лабораторної роботи №2
+## З дисципліни «Операційні системи»
+## На тему: «Знайомство з інтерфейсом та можливостями ОС Linux »
 
 
-## Виконала  
-студентка групи **БІКС-33**  
-**Руда Дарина Сергіївна**
+## Виконала
+студентка групи БІКС-33  
+Руда Дарина Сергіївна
 
-## Перевірив викладач  
-**Сушанова Вікторія Сергіївна**
+## Перевірив викладач
+Сушанова Вікторія Сергіївна
 
 
 ## Київ 2026
@@ -26,41 +26,28 @@
 
 ## Мета роботи
 Знайомство з інтерфейсами ОС Linux.  
-Отримання практичних навиків роботи в середовищах ОС Linux та мобільної ОС – їх графічною оболонкою, входом і виходом з системи, ознайомлення зі структурою робочого столу, вивчення основних дій та налаштувань при роботі в системі.
+Отримання практичних навиків роботи в середовищах ОС Linux та мобільної ОС – їх графічною оболонкою, входом і виходом з системи, ознайомлення зі структурою робочого столу, вивчення основних дій та налаштувань при роботі в системі
 
 
 ## Завдання для попередньої підготовки
-- Прочитайте короткі теоретичні відомості до лабораторної роботи та зробіть невеликий словник базових англійських термінів з питань призначення команд та їх параметрів.
-- Вивчіть матеріали онлайн-курсу академії Cisco **“NDG Linux Essentials”**:
-  - Chapter 3 - Working in Linux  
-  - Chapter 4 - Open Source Software and Licensing
-- Пройдіть тестування у курсі NDG Linux Essentials:
-  - Chapter 03 Exam  
-  - Chapter 04 Exam
-- Дайте визначення наступним поняттям:
-  - CLI-режим  
-  - Термінал на основі графічного інтерфейсу користувача  
-  - Віртуальний термінал
-- Підготувати в електронному вигляді початковий варіант звіту:
-  - Титульний аркуш  
-  - Тема та мета роботи  
-  - Словник термінів  
-  - Відповіді на п.4 з завдань для попередньої підготовки
+*Прочитайте короткі теоретичні відомості до лабораторної роботи та зробіть невеликий словник базових англійських термінів з питань призначення команд та їх параметрів.  
+Вивчіть матеріали онлайн-курсу академії Cisco “NDG Linux Essentials”:
+Chapter 3 - Working in Linux  
+Chapter 4 - Open Source Software and Licensing  
+Пройдіть тестування у курсі NDG Linux Essentials за такими темами:
+Chapter 03 Exam  
+Chapter 04 Exam  
+**Дайте визначення наступним поняттям:
+CLI-режим  
+Термінал на основі графічного інтерфейсу користувача  
+Віртуальний термінал  
+Підготувати в електронному вигляді початковий варіант звіту:
+Титульний аркуш, тема та мета роботи  
+Словник термінів  
+Відповіді на п.4 з завдань для попередньої підготовки
 
 
 ## 1. Dictionary of Basic English Terms
-- **CLI (Command Line Interface)** – A text-based interface used to interact with the operating system, where the user types commands via a keyboard to perform various tasks.
-- **Terminal** – An application that provides access to the command line within a graphical Linux environment.
-- **Virtual Terminal** – A text-only Linux mode that operates without a graphical interface, typically accessed via specific keyboard shortcuts (e.g., Ctrl+Alt+F1).
-- **Kernel** – The core of the operating system that manages hardware resources and facilitates communication between software and hardware.
-- **Process** – An instance of a running program or task being executed by the operating system.
-- **Shell** – A command-line interpreter that takes user input and passes it to the system kernel (e.g., Bash, Zsh).
-
-
-## 2. Опрацьовані навчальні матеріали
-Було опрацьовано навчальні матеріали онлайн-курсу Cisco Networking Academy **NDG Linux Essentials**, а саме:
-- Chapter 3 — Working in Linux  
-- Chapter 4 — Open Source Software and Licensing
-
-
-## 3. Було пройдено тесту
+CLI (Command Line Interface) – A text-based interface used to interact with the operating system, where the user types commands via a keyboard to perform various tasks.  
+Terminal – An application that provides access to the command line within a graphical Linux environment.  
+Virtual Terminal – A
