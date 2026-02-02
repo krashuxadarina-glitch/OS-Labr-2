@@ -8,7 +8,7 @@
 ### з дисципліни «Операційні системи»  
 
 **Тема:**  
-Знайомство з інтерфейсом та можливостями ОС Linux
+_«Знайомство з інтерфейсом та можливостями ОС Linux»_
 
 ---
 
@@ -27,33 +27,38 @@
 
 ## Мета роботи
 Знайомство з інтерфейсами ОС Linux.  
-Отримання практичних навичок роботи в середовищах ОС Linux та мобільної ОС,
-їх графічною оболонкою, входом і виходом з системи, ознайомлення зі
-структурою робочого столу, вивчення основних дій та налаштувань.
+Отримання практичних навиків роботи в середовищах ОС Linux та мобільної ОС – їх графічною оболонкою, входом і виходом з системи, ознайомлення зі структурою робочого столу, вивчення основних дій та налаштувань при роботі в системі.
 
 ---
 
 ## Завдання для попередньої підготовки
-- Ознайомлення з теоретичними відомостями
-- Складання словника базових англійських термінів
-- Проходження курсу **Cisco NDG Linux Essentials**
-- Проходження тестів Chapter 03 та Chapter 04
-- Надання визначень CLI, GUI Terminal, Virtual Terminal
+- Прочитати короткі теоретичні відомості до лабораторної роботи та зробити невеликий словник базових англійських термінів з питань призначення команд та їх параметрів.
+- Вивчити матеріали онлайн-курсу академії Cisco **NDG Linux Essentials**:
+  - Chapter 3 — Working in Linux  
+  - Chapter 4 — Open Source Software and Licensing  
+- Пройти тестування у курсі **NDG Linux Essentials**:
+  - Chapter 03 Exam  
+  - Chapter 04 Exam  
+- Дати визначення наступним поняттям:
+  - CLI-режим  
+  - Термінал на основі графічного інтерфейсу користувача  
+  - Віртуальний термінал  
 
 ---
 
 ## 1. Dictionary of Basic English Terms
 
-- **CLI (Command Line Interface)** — text-based interface for OS interaction  
-- **Terminal** — GUI application for CLI access  
-- **Virtual Terminal** — text-only Linux session  
-- **Kernel** — OS core managing hardware  
-- **Process** — running program instance  
-- **Shell** — command interpreter (Bash, Zsh)
+- **CLI (Command Line Interface)** – A text-based interface used to interact with the operating system, where the user types commands via a keyboard to perform various tasks.
+- **Terminal** – An application that provides access to the command line within a graphical Linux environment.
+- **Virtual Terminal** – A text-only Linux mode that operates without a graphical interface, typically accessed via specific keyboard shortcuts (e.g., Ctrl+Alt+F1).
+- **Kernel** – The core of the operating system that manages hardware resources and facilitates communication between software and hardware.
+- **Process** – An instance of a running program or task being executed by the operating system.
+- **Shell** – A command-line interpreter that takes user input and passes it to the system kernel (e.g., Bash, Zsh).
 
 ---
 
-## 2. Опрацьовані матеріали
+## 2. Опрацьовані навчальні матеріали
+Було опрацьовано навчальні матеріали онлайн-курсу Cisco Networking Academy **NDG Linux Essentials**, а саме:
 - Chapter 3 — Working in Linux  
 - Chapter 4 — Open Source Software and Licensing  
 
@@ -67,127 +72,106 @@
 
 ## 4. Визначення основних понять
 
-**CLI-режим** — керування ОС через текстові команди  
-**Термінал GUI** — емулятор командного рядка  
-**Віртуальний термінал** — незалежна текстова сесія Linux
+- **CLI-режим** — це режим роботи операційної системи, у якому керування здійснюється шляхом введення текстових команд без використання графічного інтерфейсу.
+- **Термінал на основі графічного інтерфейсу користувача** — це програма в середовищі GUI, яка емулює командний рядок і дозволяє працювати з CLI, не виходячи з графічної оболонки.
+- **Віртуальний термінал** — це окрема текстова сесія Linux, доступна незалежно від графічного інтерфейсу, яка дозволяє входити в систему та виконувати команди.
 
 ---
 
 ## Хід роботи
 
 ### Підготовка середовища
-Встановлено **Oracle VM VirtualBox** на ОС Windows.  
-Завантажено **Fedora Workstation 43 (x86_64)**.  
+Для роботи з ОС сімейства Linux у графічному режимі спочатку було підготовлено платформу віртуалізації, завантаживши та встановивши програму **Oracle VM VirtualBox** на ОС Windows.
 
-Параметри:
-- RAM: 4096 МБ  
-- CPU: 2 ядра  
-- Запуск: Live ISO  
+Наступним кроком із офіційного сайту проекту було завантажено образ операційної системи **Fedora Workstation 43** у форматі ISO, призначений для архітектури Intel/AMD x86_64.
+
+Процес налаштування віртуальної машини відбувався у графічному менеджері VirtualBox, де було створено новий профіль із назвою «Fedora» та вказано шлях до завантаженого ISO-файлу. Для стабільної роботи графічної оболонки було виділено оптимальні апаратні ресурси: **4096 МБ оперативної пам'яті та 2 ядра центрального процесора**. Після завершення конфігурації систему було запущено в режимі **Live ISO**, що дозволило завантажити робочий стіл GNOME безпосередньо у вікні віртуальної машини без зміни основної файлової системи комп'ютера.
 
 ---
 
-## 1. Робота в GNOME
+## 1. Робота в графічному режимі ОС Linux (GNOME)
 
-### Основні компоненти
-- Activities  
-- Dash  
-- Пошук  
-- Workspaces  
-- Quick Settings  
+Для дослідження було використано графічне середовище **GNOME**, запущене у віртуальній машині VirtualBox. Це середовище вирізняється мінімалістичним дизайном та фокусом на продуктивності.
 
-![GNOME Overview](screenshots/gnome-overview.png)
-
----
-
-### 1.2 Запуск програм
-
-**Через Dash**
-![Dash Launch](screenshots/dash-launch.png)
-
-**Через пошук**
-![Search](screenshots/search-launch.png)
-
-**Show Applications**
-![Show Apps](screenshots/show-apps.png)
-
-**Alt + F2** — запуск через команду
+### Основні компоненти робочого простору GNOME
+- **Основне меню (Activities / Огляд)** — активується натисканням клавіші Super або кліком у верхньому лівому куті. Відображає всі відкриті вікна у вигляді мініатюр.
+- **Панель швидкого доступу (Dash / Dock)** — розташована в нижній частині екрана та містить іконки закріплених програм.
+- **Пошук** — централізоване поле введення з написом *Type to search*, що дозволяє знаходити програми, налаштування та файли.
+- **Робочі столи (Workspaces)** — динамічна система організації вікон для зручної багатозадачності.
+- **Системне меню (Quick Settings)** — доступ до мережі, гучності, яскравості та керування живленням.
 
 ---
 
-### 1.3 Завершення роботи
+## 1.2 Запуск програм
 
-**Log Out**
-![Logout](screenshots/logout.png)
-
-**Restart**
-![Restart](screenshots/restart.png)
-
-**Power Off**
-![Power Off](screenshots/poweroff.png)
+### Способи запуску додатків:
+1. Через панель швидкого запуску (Dash)
+2. Через пошук у меню (Activities)
+3. Через Show Applications
+4. Через вікно виконання команд (Alt + F2)
 
 ---
 
-## 2. Мобільна ОС (iOS)
+## 1.3 Вихід з системи та завершення роботи
 
-### Інтерфейс
-- Робочі столи
-- App Library
-- Control Center
+- **Зміна користувача:** Log Out  
+- **Перезавантаження:** Restart  
+- **Вимкнення:** Power Off  
 
-### Налаштування
-- Wi-Fi / Bluetooth
-- Екран і яскравість
-- Face ID
-- Приватність
+---
 
-### Кнопки
-- Скріншот
-- Екстрений виклик
-- Примусове перезавантаження
+## 2. Робота в середовищі мобільної ОС (iOS)
 
-### Живлення
-- Low Power Mode
-- Оптимізоване заряджання
-- Стан акумулятора
+### 2.1 Головне меню та інтерфейс
+iPhone використовує закриту операційну систему **iOS**, що базується на принципах простоти та візуальної чіткості.
+
+### 2.2 Меню налаштувань
+- Wi-Fi / Bluetooth  
+- Екран та яскравість  
+- Face ID і код-пароль  
+- Приватність і безпека  
+
+### 2.3 Комбінації кнопок
+- Скріншот  
+- Екстрений виклик  
+- Примусове перезавантаження  
+
+### 2.4 Живлення батареї
+- Режим низького заряду  
+- Оптимізоване заряджання  
+- Стан акумулятора  
 
 ---
 
 ## Відповіді на контрольні запитання
 
-### 1. Серверні додатки
-MySQL, PostgreSQL, MariaDB, MongoDB, Postfix, Dovecot, Samba, Nextcloud
+### 1. Приклади серверних додатків Linux
+Сервери баз даних: MySQL, PostgreSQL, MariaDB, MongoDB  
+Сервери пошти: Postfix, Exim, Dovecot  
+Файлові сервіси: vsftpd, Samba, Nextcloud  
 
-### 2. Оболонки
-sh, csh, bash, tcsh, ksh, zsh
+### 2. Порівняння оболонок (Shells)
+- Bourne shell (sh)
+- C shell (csh)
+- Bash
+- Tcsh
+- Korn shell (ksh)
+- Zsh
 
 ### 3. Менеджери пакетів
-dnf, yum, apt, dpkg, pacman, snap, flatpak
+RPM-based: dnf, yum  
+Debian-based: apt, dpkg  
+Інші: pacman, snap, flatpak  
 
-### 4. Безпека
-DAC, SELinux, firewalld, SSH-ключі
+### 4. Засоби безпеки в Linux
+DAC (rwx), SELinux, firewalld, nftables, SSH-ключі  
 
-### 5. Віртуалізація
-Ізоляція, тестування, snapshots
+### 5. Актуальність віртуалізації
+Ізоляція, тестування, знімки стану (snapshots)
 
-### 6. Контейнеризація
-Docker — легша за ВМ, використовує ядро хоста
+### 6. Поняття контейнеризації
+Контейнеризація — це віртуалізація на рівні ОС. Контейнери (Docker) використовують ядро хоста і є значно легшими за віртуальні машини.
 
-### 7. Відкрите ПЗ
-Плюси: безкоштовність, прозорість  
-Мінуси: складність налаштування
-
-### 8. TTY
-Ctrl+Alt+F1–F6 — текстові консолі
-
-### 9. Графічна консоль
-Fedora — TTY1 / TTY2
-
-### 10. Багатосеансність
-Можливий багаторазовий вхід під одним акаунтом
-
----
-
-## Conclusion
-The laboratory work demonstrated the flexibility of Linux systems,
-the usability of GNOME, and the importance of virtualization
-for modern IT education and practice.
+### 7. Переваги та недоліки відкритого ПЗ
+**Переваги:** безкоштовність, прозорість, швидке виправлення помилок  
+**Недоліки:** складність налаштува
