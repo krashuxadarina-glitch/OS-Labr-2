@@ -8,7 +8,7 @@
 ### з дисципліни «Операційні системи»  
 
 **Тема:**  
-_«Знайомство з інтерфейсом та можливостями ОС Linux»_
+Знайомство з інтерфейсом та можливостями ОС Linux
 
 ---
 
@@ -27,39 +27,33 @@ _«Знайомство з інтерфейсом та можливостями 
 
 ## Мета роботи
 Знайомство з інтерфейсами ОС Linux.  
-Отримання практичних навичок роботи в середовищах ОС Linux та мобільної ОС – їх графічною оболонкою, входом і виходом з системи, ознайомлення зі структурою робочого столу, вивчення основних дій та налаштувань при роботі в системі.
+Отримання практичних навичок роботи в середовищах ОС Linux та мобільної ОС,
+їх графічною оболонкою, входом і виходом з системи, ознайомлення зі
+структурою робочого столу, вивчення основних дій та налаштувань.
 
 ---
 
 ## Завдання для попередньої підготовки
-- Прочитати теоретичні відомості до лабораторної роботи  
-- Скласти словник базових англійських термінів  
-- Опрацювати онлайн-курс **Cisco Networking Academy NDG Linux Essentials**:
-  - Chapter 3 — Working in Linux  
-  - Chapter 4 — Open Source Software and Licensing  
-- Пройти тестування:
-  - Chapter 03 Exam  
-  - Chapter 04 Exam  
-- Дати визначення поняттям:
-  - CLI-режим  
-  - Термінал на основі графічного інтерфейсу користувача  
-  - Віртуальний термінал  
+- Ознайомлення з теоретичними відомостями
+- Складання словника базових англійських термінів
+- Проходження курсу **Cisco NDG Linux Essentials**
+- Проходження тестів Chapter 03 та Chapter 04
+- Надання визначень CLI, GUI Terminal, Virtual Terminal
 
 ---
 
 ## 1. Dictionary of Basic English Terms
 
-- **CLI (Command Line Interface)** – A text-based interface used to interact with the operating system, where the user types commands via a keyboard.
-- **Terminal** – An application that provides access to the command line within a graphical Linux environment.
-- **Virtual Terminal** – A text-only Linux mode that operates without a graphical interface.
-- **Kernel** – The core of the operating system that manages hardware resources.
-- **Process** – An instance of a running program.
-- **Shell** – A command-line interpreter that processes user input (Bash, Zsh).
+- **CLI (Command Line Interface)** — text-based interface for OS interaction  
+- **Terminal** — GUI application for CLI access  
+- **Virtual Terminal** — text-only Linux session  
+- **Kernel** — OS core managing hardware  
+- **Process** — running program instance  
+- **Shell** — command interpreter (Bash, Zsh)
 
 ---
 
-## 2. Опрацьовані навчальні матеріали
-Було опрацьовано навчальні матеріали онлайн-курсу Cisco Networking Academy **NDG Linux Essentials**, а саме:
+## 2. Опрацьовані матеріали
 - Chapter 3 — Working in Linux  
 - Chapter 4 — Open Source Software and Licensing  
 
@@ -73,133 +67,127 @@ _«Знайомство з інтерфейсом та можливостями 
 
 ## 4. Визначення основних понять
 
-- **CLI-режим** — режим роботи операційної системи, у якому керування здійснюється шляхом введення текстових команд без використання графічного інтерфейсу.
-- **Термінал на основі GUI** — програма в графічному середовищі, що емулює командний рядок.
-- **Віртуальний термінал** — окрема текстова сесія Linux, доступна незалежно від графічної оболонки.
+**CLI-режим** — керування ОС через текстові команди  
+**Термінал GUI** — емулятор командного рядка  
+**Віртуальний термінал** — незалежна текстова сесія Linux
 
 ---
 
 ## Хід роботи
 
 ### Підготовка середовища
-Для роботи з ОС Linux було встановлено **Oracle VM VirtualBox** на ОС Windows.  
-З офіційного сайту завантажено **Fedora Workstation 43 (x86_64)**.
+Встановлено **Oracle VM VirtualBox** на ОС Windows.  
+Завантажено **Fedora Workstation 43 (x86_64)**.  
 
-Параметри ВМ:
-- Оперативна пам’ять: **4096 МБ**
-- Процесор: **2 ядра**
-- Режим запуску: **Live ISO**
+Параметри:
+- RAM: 4096 МБ  
+- CPU: 2 ядра  
+- Запуск: Live ISO  
 
 ---
 
-## 1. Робота в графічному режимі ОС Linux (GNOME)
+## 1. Робота в GNOME
 
-### Основні компоненти GNOME
-- **Activities (Огляд)** — перегляд усіх відкритих вікон
-- **Dash** — панель швидкого доступу
-- **Пошук** — миттєвий пошук програм
-- **Workspaces** — динамічні робочі столи
-- **Quick Settings** — керування мережею, звуком та живленням
+### Основні компоненти
+- Activities  
+- Dash  
+- Пошук  
+- Workspaces  
+- Quick Settings  
+
+![GNOME Overview](screenshots/gnome-overview.png)
 
 ---
 
 ### 1.2 Запуск програм
 
-1. **Через панель швидкого запуску (Dash)**  
-   Натискання на іконку програми.
+**Через Dash**
+![Dash Launch](screenshots/dash-launch.png)
 
-2. **Через пошук у меню (Activities)**  
-   Натискання клавіші `Super` та введення назви програми.
+**Через пошук**
+![Search](screenshots/search-launch.png)
 
-3. **Через Show Applications**  
-   Натискання кнопки з дев’ятьма крапками.
+**Show Applications**
+![Show Apps](screenshots/show-apps.png)
 
-4. **Через Alt + F2**  
-   Введення назви програми (наприклад, `firefox`, `gnome-terminal`).
-
----
-
-### 1.3 Вихід з системи та завершення роботи
-
-- **Зміна користувача:** Log Out  
-- **Перезавантаження:** Restart  
-- **Вимкнення:** Power Off  
+**Alt + F2** — запуск через команду
 
 ---
 
-## 2. Робота в середовищі мобільної ОС (iOS)
+### 1.3 Завершення роботи
 
-### 2.1 Головне меню
-- Робочі столи з іконками та віджетами  
-- App Library  
-- Control Center  
+**Log Out**
+![Logout](screenshots/logout.png)
 
-### 2.2 Налаштування
-- Wi-Fi / Bluetooth  
-- Екран та яскравість  
-- Face ID і код-пароль  
-- Приватність і безпека  
+**Restart**
+![Restart](screenshots/restart.png)
 
-### 2.3 Комбінації кнопок
-- Скріншот  
-- Екстрений виклик  
-- Примусове перезавантаження  
+**Power Off**
+![Power Off](screenshots/poweroff.png)
 
-### 2.4 Живлення
-- Режим низького заряду  
-- Оптимізоване заряджання  
-- Перегляд стану акумулятора  
+---
+
+## 2. Мобільна ОС (iOS)
+
+### Інтерфейс
+- Робочі столи
+- App Library
+- Control Center
+
+### Налаштування
+- Wi-Fi / Bluetooth
+- Екран і яскравість
+- Face ID
+- Приватність
+
+### Кнопки
+- Скріншот
+- Екстрений виклик
+- Примусове перезавантаження
+
+### Живлення
+- Low Power Mode
+- Оптимізоване заряджання
+- Стан акумулятора
 
 ---
 
 ## Відповіді на контрольні запитання
 
-### 1. Приклади серверних додатків Linux
-- MySQL, PostgreSQL, MariaDB, MongoDB  
-- Postfix, Exim, Dovecot  
-- vsftpd, Samba, Nextcloud  
+### 1. Серверні додатки
+MySQL, PostgreSQL, MariaDB, MongoDB, Postfix, Dovecot, Samba, Nextcloud
 
-### 2. Порівняння оболонок
-- sh, csh, bash, tcsh, ksh, zsh  
+### 2. Оболонки
+sh, csh, bash, tcsh, ksh, zsh
 
 ### 3. Менеджери пакетів
-- RPM-based: dnf, yum  
-- Debian-based: apt, dpkg  
-- Інші: pacman, snap, flatpak  
+dnf, yum, apt, dpkg, pacman, snap, flatpak
 
-### 4. Засоби безпеки
-- DAC (rwx)  
-- SELinux  
-- firewalld, nftables  
-- SSH-ключі  
+### 4. Безпека
+DAC, SELinux, firewalld, SSH-ключі
 
-### 5. Актуальність віртуалізації
-- Ізоляція  
-- Тестування  
-- Snapshots  
+### 5. Віртуалізація
+Ізоляція, тестування, snapshots
 
 ### 6. Контейнеризація
-Контейнери (Docker) використовують ядро хоста та є значно легшими за ВМ.
+Docker — легша за ВМ, використовує ядро хоста
 
 ### 7. Відкрите ПЗ
-**Переваги:** безкоштовність, прозорість  
-**Недоліки:** складність налаштування, менше підтримки  
+Плюси: безкоштовність, прозорість  
+Мінуси: складність налаштування
 
-### 8. Віртуальні консолі (TTY)
-- Ctrl + Alt + F1–F6  
-- Можливість керування системою без GUI  
+### 8. TTY
+Ctrl+Alt+F1–F6 — текстові консолі
 
 ### 9. Графічна консоль
-У Fedora графічна оболонка зазвичай працює на TTY1 або TTY2.
+Fedora — TTY1 / TTY2
 
-### 10. Реєстрація під одним ім’ям
-Linux дозволяє багаторазовий вхід під одним акаунтом одночасно.
+### 10. Багатосеансність
+Можливий багаторазовий вхід під одним акаунтом
 
 ---
 
 ## Conclusion
-
-In the course of this laboratory work, I successfully deployed and configured Fedora Workstation 43 using Oracle VM VirtualBox.  
-I explored the GNOME graphical interface, application launching methods, power management, and mobile OS features.  
-This work confirmed the flexibility and efficiency of Linux systems and highlighted the importance of virtualization in modern IT.
-
+The laboratory work demonstrated the flexibility of Linux systems,
+the usability of GNOME, and the importance of virtualization
+for modern IT education and practice.
